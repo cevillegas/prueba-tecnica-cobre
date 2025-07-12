@@ -1,0 +1,4880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("bf631851-b849-4470-a830-d5a5ad8988d5",{name:"PC"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>acceptance.test.prueba-tecnica-refactor</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-07-12 04:38:00 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:72]"><span>[1.1:72]</span> <span>Dado que se carga un archivo de recaudo con datos correctamente con usuarios que recibirán un link de pago, al procesarse el archivo se persisten en BD los recaudo creados exitosamente</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.1:139]"><span>[2.1:139]</span> <span>Dado que se carga un archivo de recaudo con datos que contienen caracteres especiales, al procesarse el archivo se verificará la información y se persistirán en BD con el detalle del error</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">acceptance/test/prueba-tecnica-refactor.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">sample karate test script</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:72]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">regression</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:72]</span>
+                <span class="scenario-name">Dado que se carga un archivo de recaudo con datos correctamente con usuarios que recibirán un link de pago, al procesarse el archivo se persisten en BD los recaudo creados exitosamente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:72]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:72]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>configure retry = {count: 3, interval: 3000}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">16:38:00.233 Cargando configuraciones 
+16:38:00.246 classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+* configure retry = {count: 3, interval: 3000}
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:72]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def SQSManager = karate.callSingle(&#39;../acceptance/test/instances-sqs.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">16:38:00.246 classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+* def SQSManager = karate.callSingle(&#39;../acceptance/test/instances-sqs.js&#39;)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:72]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def uuid = java.util.UUID.randomUUID().toString()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6">16:38:00.247 classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+* def uuid = java.util.UUID.randomUUID().toString()
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:72]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def fileExtension = &quot;.csv&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7">16:38:00.247 classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+* def fileExtension = &quot;.csv&quot;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:72]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def bucketName = &#39;test-automation-qa&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">16:38:00.247 classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+* def bucketName = &#39;test-automation-qa&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:72]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def folderRecaudoFiles = &#39;files-to-cash-in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.9">16:38:00.247 classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+* def folderRecaudoFiles = &#39;files-to-cash-in&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def result = call read(&#39;classpath:acceptance/test/resources/utils/utils.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.13">{
+currentFilePath: &#39;src/test/java/acceptance/test/&#39;,
+currentFileName: &#39;recaudoTemplateDatosCorrectos.csv&#39;,
+newPathNewFile: &#39;src/test/resources/testFilesToUse/&#39;,
+uuid: &#39;#(uuid)&#39;,
+fileExtension: &#39;#(fileExtension)&#39;,
+bucketName: &#39;#(bucketName)&#39;,
+folderRecaudoFiles: &#39;#(folderRecaudoFiles)&#39;
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="1.13">16:38:00.247 classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+* def result = call read(&#39;classpath:acceptance/test/resources/utils/utils.feature&#39;)
+&quot;&quot;&quot;
+{
+currentFilePath: &#39;src/test/java/acceptance/test/&#39;,
+currentFileName: &#39;recaudoTemplateDatosCorrectos.csv&#39;,
+newPathNewFile: &#39;src/test/resources/testFilesToUse/&#39;,
+uuid: &#39;#(uuid)&#39;,
+fileExtension: &#39;#(fileExtension)&#39;,
+bucketName: &#39;#(bucketName)&#39;,
+folderRecaudoFiles: &#39;#(folderRecaudoFiles)&#39;
+}
+&quot;&quot;&quot;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref failed">25</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def fullFileName = result.fullFileName</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.25">16:38:00.247 classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+* def fullFileName = result.fullFileName
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref failed">27</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def variableMapToReplaceInQueueMessageBody =</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.27">{
+&quot;fileName&quot;: &#39;#(fullFileName)&#39;,
+&quot;workplacebankCode&quot;: &#39;TEST01&#39;,
+&quot;bucketName&quot;: &#39;#(bucketName)&#39;
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="1.27">16:38:00.248 classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+* def variableMapToReplaceInQueueMessageBody =
+&quot;&quot;&quot;
+{
+&quot;fileName&quot;: &#39;#(fullFileName)&#39;,
+&quot;workplacebankCode&quot;: &#39;TEST01&#39;,
+&quot;bucketName&quot;: &#39;#(bucketName)&#39;
+}
+&quot;&quot;&quot;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.35">
+      <div class="step-ref failed">35</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>SQSManager.sendMessageToQueue(&#39;queueEvent.json&#39;, &#39;testing-recaudo-qa.fifo&#39;, variableMapToReplaceInQueueMessageBody, &#39;src/test/java/acceptance/test/&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.35">16:38:00.249 classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+* SQSManager.sendMessageToQueue(&#39;queueEvent.json&#39;, &#39;testing-recaudo-qa.fifo&#39;, variableMapToReplaceInQueueMessageBody, &#39;src/test/java/acceptance/test/&#39;)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.36">
+      <div class="step-ref failed">36</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>waitTime(8)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.36">16:38:00.250 classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+* waitTime(8)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Uso de API REST para obtener información de las novedades</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.40">
+      <div class="step-ref failed">40</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.40">16:38:00.250 classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+Given url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.41">
+      <div class="step-ref failed">41</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>header X-WorkplaceBankCode = &#39;TEST01&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.41">16:38:00.250 classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+And header X-WorkplaceBankCode = &#39;TEST01&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.42">
+      <div class="step-ref failed">42</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>retry until responseStatus == 200 &amp;&amp; response.cashInNovelty.status == status &amp;&amp; response.cashInNoveltyDetailsCounters.total == total</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.42">16:38:00.252 classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+And retry until responseStatus == 200 &amp;&amp; response.cashInNovelty.status == status &amp;&amp; response.cashInNoveltyDetailsCounters.total == total
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.43">
+      <div class="step-ref failed">43</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.43">16:38:00.252 classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+When method get
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.44">
+      <div class="step-ref failed">44</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.44">16:38:00.252 classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+Then status 200
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.45">
+      <div class="step-ref failed">45</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def totalAmount = response.cashInNovelty.totalAmount</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.45">16:38:00.254 classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+* def totalAmount = response.cashInNovelty.totalAmount
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.46">
+      <div class="step-ref failed">46</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def status = response.cashInNovelty.status</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.46">16:38:00.255 classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+* def status = response.cashInNovelty.status
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.47">
+      <div class="step-ref failed">47</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def totalNovelties = response.cashInNoveltyDetailsCounters.total</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.47">16:38:00.255 classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+* def totalNovelties = response.cashInNoveltyDetailsCounters.total
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.48">
+      <div class="step-ref failed">48</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def validationError = response.cashInNoveltyDetailsCounters.validationError</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.48">16:38:00.257 classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+* def validationError = response.cashInNoveltyDetailsCounters.validationError
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.49">
+      <div class="step-ref failed">49</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def created = response.cashInNoveltyDetailsCounters.created#    * match totalAmount == &#39;&lt;&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.49">16:38:00.257 classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+* def created = response.cashInNoveltyDetailsCounters.created#    * match totalAmount == &#39;&lt;&gt;&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.50">
+      <div class="step-ref failed">50</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.status == &#39;VALIDATED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.50">16:38:00.257 classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+* match getNovelty.status == &#39;VALIDATED&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.51">
+      <div class="step-ref failed">51</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.totalNovelties == &#39;3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.51">16:38:00.259 classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+* match getNovelty.totalNovelties == &#39;3&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.52">
+      <div class="step-ref failed">52</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.validationError == &#39;0&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.52">16:38:00.261 classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+* match getNovelty.validationError == &#39;0&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.53">
+      <div class="step-ref failed">53</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.created == &#39;3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.53">16:38:00.261 classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+* match getNovelty.created == &#39;3&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.54">
+      <div class="step-ref failed">54</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>waitTime(3)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.54">16:38:00.262 classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+* waitTime(3)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Uso de API REST para obtener información de las novelty-details</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def dataWithExpectedInformation = karate.read(&quot;classpath:acceptance/test/&quot; + &#39;respuestaEsperadaDatosCorrectos.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.58">16:38:00.262 classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+* def dataWithExpectedInformation = karate.read(&quot;classpath:acceptance/test/&quot; + &#39;respuestaEsperadaDatosCorrectos.json&#39;)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.59">
+      <div class="step-ref failed">59</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def pageInt = parseInt(&#39;1&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.59">16:38:00.265 classpath:acceptance/test/prueba-tecnica-refactor.feature:59
+* def pageInt = parseInt(&#39;1&#39;)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+classpath:acceptance/test/prueba-tecnica-refactor.feature:59
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.60">
+      <div class="step-ref failed">60</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def sizeInt = parseInt(&#39;3&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.60">16:38:00.265 classpath:acceptance/test/prueba-tecnica-refactor.feature:60
+* def sizeInt = parseInt(&#39;3&#39;)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+classpath:acceptance/test/prueba-tecnica-refactor.feature:59
+classpath:acceptance/test/prueba-tecnica-refactor.feature:60
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.61">
+      <div class="step-ref failed">61</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;+&#39;/novelty-details&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.61">16:38:00.267 classpath:acceptance/test/prueba-tecnica-refactor.feature:61
+Given url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;+&#39;/novelty-details&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+classpath:acceptance/test/prueba-tecnica-refactor.feature:59
+classpath:acceptance/test/prueba-tecnica-refactor.feature:60
+classpath:acceptance/test/prueba-tecnica-refactor.feature:61
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.62">
+      <div class="step-ref failed">62</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>header X-WorkplaceBankCode = &#39;TEST01&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.62">16:38:00.267 classpath:acceptance/test/prueba-tecnica-refactor.feature:62
+And header X-WorkplaceBankCode = &#39;TEST01&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+classpath:acceptance/test/prueba-tecnica-refactor.feature:59
+classpath:acceptance/test/prueba-tecnica-refactor.feature:60
+classpath:acceptance/test/prueba-tecnica-refactor.feature:61
+classpath:acceptance/test/prueba-tecnica-refactor.feature:62
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.63">
+      <div class="step-ref failed">63</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>params {page: &#39;0&#39;, size: &#39;100&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.63">16:38:00.269 classpath:acceptance/test/prueba-tecnica-refactor.feature:63
+And params {page: &#39;0&#39;, size: &#39;100&#39;}
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+classpath:acceptance/test/prueba-tecnica-refactor.feature:59
+classpath:acceptance/test/prueba-tecnica-refactor.feature:60
+classpath:acceptance/test/prueba-tecnica-refactor.feature:61
+classpath:acceptance/test/prueba-tecnica-refactor.feature:62
+classpath:acceptance/test/prueba-tecnica-refactor.feature:63
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>retry until responseStatus == 200 &amp;&amp; response.content != []</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.64">16:38:00.269 classpath:acceptance/test/prueba-tecnica-refactor.feature:64
+And retry until responseStatus == 200 &amp;&amp; response.content != []
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+classpath:acceptance/test/prueba-tecnica-refactor.feature:59
+classpath:acceptance/test/prueba-tecnica-refactor.feature:60
+classpath:acceptance/test/prueba-tecnica-refactor.feature:61
+classpath:acceptance/test/prueba-tecnica-refactor.feature:62
+classpath:acceptance/test/prueba-tecnica-refactor.feature:63
+classpath:acceptance/test/prueba-tecnica-refactor.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.65">
+      <div class="step-ref failed">65</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.65">16:38:00.271 classpath:acceptance/test/prueba-tecnica-refactor.feature:65
+When method get
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+classpath:acceptance/test/prueba-tecnica-refactor.feature:59
+classpath:acceptance/test/prueba-tecnica-refactor.feature:60
+classpath:acceptance/test/prueba-tecnica-refactor.feature:61
+classpath:acceptance/test/prueba-tecnica-refactor.feature:62
+classpath:acceptance/test/prueba-tecnica-refactor.feature:63
+classpath:acceptance/test/prueba-tecnica-refactor.feature:64
+classpath:acceptance/test/prueba-tecnica-refactor.feature:65
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.66">
+      <div class="step-ref failed">66</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.66">16:38:00.272 classpath:acceptance/test/prueba-tecnica-refactor.feature:66
+Then status 200
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+classpath:acceptance/test/prueba-tecnica-refactor.feature:59
+classpath:acceptance/test/prueba-tecnica-refactor.feature:60
+classpath:acceptance/test/prueba-tecnica-refactor.feature:61
+classpath:acceptance/test/prueba-tecnica-refactor.feature:62
+classpath:acceptance/test/prueba-tecnica-refactor.feature:63
+classpath:acceptance/test/prueba-tecnica-refactor.feature:64
+classpath:acceptance/test/prueba-tecnica-refactor.feature:65
+classpath:acceptance/test/prueba-tecnica-refactor.feature:66
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.67">
+      <div class="step-ref failed">67</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def content = response.content</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.67">16:38:00.274 classpath:acceptance/test/prueba-tecnica-refactor.feature:67
+* def content = response.content
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+classpath:acceptance/test/prueba-tecnica-refactor.feature:59
+classpath:acceptance/test/prueba-tecnica-refactor.feature:60
+classpath:acceptance/test/prueba-tecnica-refactor.feature:61
+classpath:acceptance/test/prueba-tecnica-refactor.feature:62
+classpath:acceptance/test/prueba-tecnica-refactor.feature:63
+classpath:acceptance/test/prueba-tecnica-refactor.feature:64
+classpath:acceptance/test/prueba-tecnica-refactor.feature:65
+classpath:acceptance/test/prueba-tecnica-refactor.feature:66
+classpath:acceptance/test/prueba-tecnica-refactor.feature:67
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.68">
+      <div class="step-ref failed">68</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNoveltyDetails.content contains deep dataWithExpectedInformation</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.68">16:38:00.274 classpath:acceptance/test/prueba-tecnica-refactor.feature:68
+* match getNoveltyDetails.content contains deep dataWithExpectedInformation
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:72
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:13
+classpath:acceptance/test/prueba-tecnica-refactor.feature:25
+classpath:acceptance/test/prueba-tecnica-refactor.feature:27
+classpath:acceptance/test/prueba-tecnica-refactor.feature:35
+classpath:acceptance/test/prueba-tecnica-refactor.feature:36
+classpath:acceptance/test/prueba-tecnica-refactor.feature:40
+classpath:acceptance/test/prueba-tecnica-refactor.feature:41
+classpath:acceptance/test/prueba-tecnica-refactor.feature:42
+classpath:acceptance/test/prueba-tecnica-refactor.feature:43
+classpath:acceptance/test/prueba-tecnica-refactor.feature:44
+classpath:acceptance/test/prueba-tecnica-refactor.feature:45
+classpath:acceptance/test/prueba-tecnica-refactor.feature:46
+classpath:acceptance/test/prueba-tecnica-refactor.feature:47
+classpath:acceptance/test/prueba-tecnica-refactor.feature:48
+classpath:acceptance/test/prueba-tecnica-refactor.feature:49
+classpath:acceptance/test/prueba-tecnica-refactor.feature:50
+classpath:acceptance/test/prueba-tecnica-refactor.feature:51
+classpath:acceptance/test/prueba-tecnica-refactor.feature:52
+classpath:acceptance/test/prueba-tecnica-refactor.feature:53
+classpath:acceptance/test/prueba-tecnica-refactor.feature:54
+classpath:acceptance/test/prueba-tecnica-refactor.feature:58
+classpath:acceptance/test/prueba-tecnica-refactor.feature:59
+classpath:acceptance/test/prueba-tecnica-refactor.feature:60
+classpath:acceptance/test/prueba-tecnica-refactor.feature:61
+classpath:acceptance/test/prueba-tecnica-refactor.feature:62
+classpath:acceptance/test/prueba-tecnica-refactor.feature:63
+classpath:acceptance/test/prueba-tecnica-refactor.feature:64
+classpath:acceptance/test/prueba-tecnica-refactor.feature:65
+classpath:acceptance/test/prueba-tecnica-refactor.feature:66
+classpath:acceptance/test/prueba-tecnica-refactor.feature:67
+classpath:acceptance/test/prueba-tecnica-refactor.feature:68
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:139]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">regression</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:139]</span>
+                <span class="scenario-name">Dado que se carga un archivo de recaudo con datos que contienen caracteres especiales, al procesarse el archivo se verificará la información y se persistirán en BD con el detalle del error</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:139]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>configure retry = {count: 3, interval: 3000}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">16:38:00.295 Cargando configuraciones 
+16:38:00.297 classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+* configure retry = {count: 3, interval: 3000}
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def SQSManager = karate.callSingle(&#39;../acceptance/test/instances-sqs.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">16:38:00.297 classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+* def SQSManager = karate.callSingle(&#39;../acceptance/test/instances-sqs.js&#39;)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def uuid = java.util.UUID.randomUUID().toString()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6">16:38:00.297 classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+* def uuid = java.util.UUID.randomUUID().toString()
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def fileExtension = &quot;.csv&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7">16:38:00.297 classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+* def fileExtension = &quot;.csv&quot;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def bucketName = &#39;test-automation-qa&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">16:38:00.298 classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+* def bucketName = &#39;test-automation-qa&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:139]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def folderRecaudoFiles = &#39;files-to-cash-in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.9">16:38:00.298 classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+* def folderRecaudoFiles = &#39;files-to-cash-in&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def CsvModifierUtil = Java.type(&#39;co.cobre.lib.qa.utils.csv_modifier&#39;)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def modified = CsvModifierUtil.modifyExpirationDate(filePath)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* match modified == true</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.80">
+      <div class="step-ref failed">80</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def result = call read(&#39;classpath:acceptance/test/resources/utils/utils.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.80">{
+currentFilePath: &#39;src/test/java/acceptance/test/&#39;,
+currentFileName: &#39;recaudoTemplateCaracteresEspeciales.csv&#39;,
+newPathNewFile: &#39;src/test/resources/testFilesToUse/&#39;,
+uuid: &#39;#(uuid)&#39;,
+fileExtension: &#39;#(fileExtension)&#39;,
+bucketName: &#39;#(bucketName)&#39;,
+folderRecaudoFiles: &#39;#(folderRecaudoFiles)&#39;
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="1.80">16:38:00.298 classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+* def result = call read(&#39;classpath:acceptance/test/resources/utils/utils.feature&#39;)
+&quot;&quot;&quot;
+{
+currentFilePath: &#39;src/test/java/acceptance/test/&#39;,
+currentFileName: &#39;recaudoTemplateCaracteresEspeciales.csv&#39;,
+newPathNewFile: &#39;src/test/resources/testFilesToUse/&#39;,
+uuid: &#39;#(uuid)&#39;,
+fileExtension: &#39;#(fileExtension)&#39;,
+bucketName: &#39;#(bucketName)&#39;,
+folderRecaudoFiles: &#39;#(folderRecaudoFiles)&#39;
+}
+&quot;&quot;&quot;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.92">
+      <div class="step-ref failed">92</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def fullFileName = result.fullFileName</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.92">16:38:00.298 classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+* def fullFileName = result.fullFileName
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.94">
+      <div class="step-ref failed">94</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def variableMapToReplaceInQueueMessageBody =</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.94">{
+&quot;fileName&quot;: &#39;#(fullFileName)&#39;,
+&quot;workplacebankCode&quot;: &#39;TEST01&#39;,
+&quot;bucketName&quot;: &#39;#(bucketName)&#39;
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="1.94">16:38:00.299 classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+* def variableMapToReplaceInQueueMessageBody =
+&quot;&quot;&quot;
+{
+&quot;fileName&quot;: &#39;#(fullFileName)&#39;,
+&quot;workplacebankCode&quot;: &#39;TEST01&#39;,
+&quot;bucketName&quot;: &#39;#(bucketName)&#39;
+}
+&quot;&quot;&quot;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.102">
+      <div class="step-ref failed">102</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>SQSManager.sendMessageToQueue(&#39;queueEvent.json&#39;, &#39;testing-recaudo-qa.fifo&#39;, variableMapToReplaceInQueueMessageBody, &#39;src/test/java/acceptance/test/&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.102">16:38:00.299 classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+* SQSManager.sendMessageToQueue(&#39;queueEvent.json&#39;, &#39;testing-recaudo-qa.fifo&#39;, variableMapToReplaceInQueueMessageBody, &#39;src/test/java/acceptance/test/&#39;)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.103">
+      <div class="step-ref failed">103</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>waitTime(8)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.103">16:38:00.300 classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+* waitTime(8)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Uso de API REST para obtener información de las novedades</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.107">
+      <div class="step-ref failed">107</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.107">16:38:00.302 classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+Given url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.108">
+      <div class="step-ref failed">108</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>header X-WorkplaceBankCode = &#39;TEST01&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.108">16:38:00.302 classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+And header X-WorkplaceBankCode = &#39;TEST01&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.109">
+      <div class="step-ref failed">109</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>retry until responseStatus == 200 &amp;&amp; response.cashInNovelty.status == status &amp;&amp; response.cashInNoveltyDetailsCounters.total == total</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.109">16:38:00.302 classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+And retry until responseStatus == 200 &amp;&amp; response.cashInNovelty.status == status &amp;&amp; response.cashInNoveltyDetailsCounters.total == total
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.110">
+      <div class="step-ref failed">110</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.110">16:38:00.303 classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+When method get
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.111">
+      <div class="step-ref failed">111</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.111">16:38:00.303 classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+Then status 200
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.112">
+      <div class="step-ref failed">112</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def totalAmount = response.cashInNovelty.totalAmount</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.112">16:38:00.303 classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+* def totalAmount = response.cashInNovelty.totalAmount
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.113">
+      <div class="step-ref failed">113</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def status = response.cashInNovelty.status</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.113">16:38:00.304 classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+* def status = response.cashInNovelty.status
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.114">
+      <div class="step-ref failed">114</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def totalNovelties = response.cashInNoveltyDetailsCounters.total</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.114">16:38:00.304 classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+* def totalNovelties = response.cashInNoveltyDetailsCounters.total
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.115">
+      <div class="step-ref failed">115</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def validationError = response.cashInNoveltyDetailsCounters.validationError</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.115">16:38:00.304 classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+* def validationError = response.cashInNoveltyDetailsCounters.validationError
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.116">
+      <div class="step-ref failed">116</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def created = response.cashInNoveltyDetailsCounters.created#    * match totalAmount == &#39;&lt;&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.116">16:38:00.304 classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+* def created = response.cashInNoveltyDetailsCounters.created#    * match totalAmount == &#39;&lt;&gt;&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.117">
+      <div class="step-ref failed">117</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.status == &#39;VALIDATED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.117">16:38:00.304 classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+* match getNovelty.status == &#39;VALIDATED&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.118">
+      <div class="step-ref failed">118</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.totalNovelties == &#39;2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.118">16:38:00.305 classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+* match getNovelty.totalNovelties == &#39;2&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.119">
+      <div class="step-ref failed">119</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.validationError == &#39;2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.119">16:38:00.305 classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+* match getNovelty.validationError == &#39;2&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.120">
+      <div class="step-ref failed">120</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.created == &#39;0&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.120">16:38:00.306 classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+* match getNovelty.created == &#39;0&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.121">
+      <div class="step-ref failed">121</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>waitTime(3)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.121">16:38:00.306 classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+* waitTime(3)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Uso de API REST para obtener información de las novelty-details</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.125">
+      <div class="step-ref failed">125</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def dataWithExpectedInformation = karate.read(&quot;classpath:acceptance/test/&quot; + &#39;respuestaEsperadaCaracteresEspeciales.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.125">16:38:00.307 classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+* def dataWithExpectedInformation = karate.read(&quot;classpath:acceptance/test/&quot; + &#39;respuestaEsperadaCaracteresEspeciales.json&#39;)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.126">
+      <div class="step-ref failed">126</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def pageInt = parseInt(&#39;1&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.126">16:38:00.307 classpath:acceptance/test/prueba-tecnica-refactor.feature:126
+* def pageInt = parseInt(&#39;1&#39;)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+classpath:acceptance/test/prueba-tecnica-refactor.feature:126
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.127">
+      <div class="step-ref failed">127</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def sizeInt = parseInt(&#39;2&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.127">16:38:00.308 classpath:acceptance/test/prueba-tecnica-refactor.feature:127
+* def sizeInt = parseInt(&#39;2&#39;)
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+classpath:acceptance/test/prueba-tecnica-refactor.feature:126
+classpath:acceptance/test/prueba-tecnica-refactor.feature:127
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.128">
+      <div class="step-ref failed">128</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;+&#39;/novelty-details&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.128">16:38:00.309 classpath:acceptance/test/prueba-tecnica-refactor.feature:128
+Given url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;+&#39;/novelty-details&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+classpath:acceptance/test/prueba-tecnica-refactor.feature:126
+classpath:acceptance/test/prueba-tecnica-refactor.feature:127
+classpath:acceptance/test/prueba-tecnica-refactor.feature:128
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.129">
+      <div class="step-ref failed">129</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>header X-WorkplaceBankCode = &#39;TEST01&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.129">16:38:00.309 classpath:acceptance/test/prueba-tecnica-refactor.feature:129
+And header X-WorkplaceBankCode = &#39;TEST01&#39;
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+classpath:acceptance/test/prueba-tecnica-refactor.feature:126
+classpath:acceptance/test/prueba-tecnica-refactor.feature:127
+classpath:acceptance/test/prueba-tecnica-refactor.feature:128
+classpath:acceptance/test/prueba-tecnica-refactor.feature:129
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.130">
+      <div class="step-ref failed">130</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>params {page: &#39;0&#39;, size: &#39;100&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.130">16:38:00.309 classpath:acceptance/test/prueba-tecnica-refactor.feature:130
+And params {page: &#39;0&#39;, size: &#39;100&#39;}
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+classpath:acceptance/test/prueba-tecnica-refactor.feature:126
+classpath:acceptance/test/prueba-tecnica-refactor.feature:127
+classpath:acceptance/test/prueba-tecnica-refactor.feature:128
+classpath:acceptance/test/prueba-tecnica-refactor.feature:129
+classpath:acceptance/test/prueba-tecnica-refactor.feature:130
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.131">
+      <div class="step-ref failed">131</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>retry until responseStatus == 200 &amp;&amp; response.content != []</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.131">16:38:00.311 classpath:acceptance/test/prueba-tecnica-refactor.feature:131
+And retry until responseStatus == 200 &amp;&amp; response.content != []
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+classpath:acceptance/test/prueba-tecnica-refactor.feature:126
+classpath:acceptance/test/prueba-tecnica-refactor.feature:127
+classpath:acceptance/test/prueba-tecnica-refactor.feature:128
+classpath:acceptance/test/prueba-tecnica-refactor.feature:129
+classpath:acceptance/test/prueba-tecnica-refactor.feature:130
+classpath:acceptance/test/prueba-tecnica-refactor.feature:131
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.132">
+      <div class="step-ref failed">132</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.132">16:38:00.311 classpath:acceptance/test/prueba-tecnica-refactor.feature:132
+When method get
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+classpath:acceptance/test/prueba-tecnica-refactor.feature:126
+classpath:acceptance/test/prueba-tecnica-refactor.feature:127
+classpath:acceptance/test/prueba-tecnica-refactor.feature:128
+classpath:acceptance/test/prueba-tecnica-refactor.feature:129
+classpath:acceptance/test/prueba-tecnica-refactor.feature:130
+classpath:acceptance/test/prueba-tecnica-refactor.feature:131
+classpath:acceptance/test/prueba-tecnica-refactor.feature:132
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.133">
+      <div class="step-ref failed">133</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.133">16:38:00.312 classpath:acceptance/test/prueba-tecnica-refactor.feature:133
+Then status 200
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+classpath:acceptance/test/prueba-tecnica-refactor.feature:126
+classpath:acceptance/test/prueba-tecnica-refactor.feature:127
+classpath:acceptance/test/prueba-tecnica-refactor.feature:128
+classpath:acceptance/test/prueba-tecnica-refactor.feature:129
+classpath:acceptance/test/prueba-tecnica-refactor.feature:130
+classpath:acceptance/test/prueba-tecnica-refactor.feature:131
+classpath:acceptance/test/prueba-tecnica-refactor.feature:132
+classpath:acceptance/test/prueba-tecnica-refactor.feature:133
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.134">
+      <div class="step-ref failed">134</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def content = response.content</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.134">16:38:00.312 classpath:acceptance/test/prueba-tecnica-refactor.feature:134
+* def content = response.content
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+classpath:acceptance/test/prueba-tecnica-refactor.feature:126
+classpath:acceptance/test/prueba-tecnica-refactor.feature:127
+classpath:acceptance/test/prueba-tecnica-refactor.feature:128
+classpath:acceptance/test/prueba-tecnica-refactor.feature:129
+classpath:acceptance/test/prueba-tecnica-refactor.feature:130
+classpath:acceptance/test/prueba-tecnica-refactor.feature:131
+classpath:acceptance/test/prueba-tecnica-refactor.feature:132
+classpath:acceptance/test/prueba-tecnica-refactor.feature:133
+classpath:acceptance/test/prueba-tecnica-refactor.feature:134
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.135">
+      <div class="step-ref failed">135</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNoveltyDetails.content contains deep dataWithExpectedInformation</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.135">16:38:00.312 classpath:acceptance/test/prueba-tecnica-refactor.feature:135
+* match getNoveltyDetails.content contains deep dataWithExpectedInformation
+&gt;&gt; classpath:acceptance/test/prueba-tecnica-refactor.feature:139
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;config&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;config&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:acceptance/test/prueba-tecnica-refactor.feature:4
+classpath:acceptance/test/prueba-tecnica-refactor.feature:5
+classpath:acceptance/test/prueba-tecnica-refactor.feature:6
+classpath:acceptance/test/prueba-tecnica-refactor.feature:7
+classpath:acceptance/test/prueba-tecnica-refactor.feature:8
+classpath:acceptance/test/prueba-tecnica-refactor.feature:9
+classpath:acceptance/test/prueba-tecnica-refactor.feature:80
+classpath:acceptance/test/prueba-tecnica-refactor.feature:92
+classpath:acceptance/test/prueba-tecnica-refactor.feature:94
+classpath:acceptance/test/prueba-tecnica-refactor.feature:102
+classpath:acceptance/test/prueba-tecnica-refactor.feature:103
+classpath:acceptance/test/prueba-tecnica-refactor.feature:107
+classpath:acceptance/test/prueba-tecnica-refactor.feature:108
+classpath:acceptance/test/prueba-tecnica-refactor.feature:109
+classpath:acceptance/test/prueba-tecnica-refactor.feature:110
+classpath:acceptance/test/prueba-tecnica-refactor.feature:111
+classpath:acceptance/test/prueba-tecnica-refactor.feature:112
+classpath:acceptance/test/prueba-tecnica-refactor.feature:113
+classpath:acceptance/test/prueba-tecnica-refactor.feature:114
+classpath:acceptance/test/prueba-tecnica-refactor.feature:115
+classpath:acceptance/test/prueba-tecnica-refactor.feature:116
+classpath:acceptance/test/prueba-tecnica-refactor.feature:117
+classpath:acceptance/test/prueba-tecnica-refactor.feature:118
+classpath:acceptance/test/prueba-tecnica-refactor.feature:119
+classpath:acceptance/test/prueba-tecnica-refactor.feature:120
+classpath:acceptance/test/prueba-tecnica-refactor.feature:121
+classpath:acceptance/test/prueba-tecnica-refactor.feature:125
+classpath:acceptance/test/prueba-tecnica-refactor.feature:126
+classpath:acceptance/test/prueba-tecnica-refactor.feature:127
+classpath:acceptance/test/prueba-tecnica-refactor.feature:128
+classpath:acceptance/test/prueba-tecnica-refactor.feature:129
+classpath:acceptance/test/prueba-tecnica-refactor.feature:130
+classpath:acceptance/test/prueba-tecnica-refactor.feature:131
+classpath:acceptance/test/prueba-tecnica-refactor.feature:132
+classpath:acceptance/test/prueba-tecnica-refactor.feature:133
+classpath:acceptance/test/prueba-tecnica-refactor.feature:134
+classpath:acceptance/test/prueba-tecnica-refactor.feature:135
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

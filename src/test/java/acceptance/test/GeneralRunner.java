@@ -18,17 +18,17 @@ public class GeneralRunner {
         Results results = Runner.path("classpath:acceptance/test")
                 .outputCucumberJson(true)
                 .parallel(1);
-        generateReport(results.getReportDir());
+        //generateReport(results.getReportDir());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 
-    public static void generateReport(String karateOutputPath) {
+/**    public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
         jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
         Configuration config = new Configuration(new File("target"), "Acceptance test report");
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
-    }
+    }*/
 
 }
