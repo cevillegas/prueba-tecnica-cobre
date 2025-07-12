@@ -9,7 +9,7 @@ Feature: sample karate test script
     * def S3ManagerInstance = new S3Manager()
     * def SQSManager = karate.callSingle('../acceptance/test/instances-sqs.js')
     * def waitTime = function(seconds) { java.lang.Thread.sleep(seconds * 1000) }
-    # La clase FileUtils se encuentra en un gestor de librerías externo al proyecto
+    # Clase FileUtils se encuentra en un gestor de librerías externo al proyecto
     # Imaginemos que esta clase contiene métodos para tomar un archivo, renombrarlo y copiarlo en otra ruta
     * def FileUtils = Java.type('co.cobre.lib.qa.util.FileUtils')
 
