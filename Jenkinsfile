@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/mpuellos/PruebaTecnica.git'
+                git branch: 'main', url: 'https://github.com/cevillegas/prueba-tecnica-cobre.git'
             }
         }
 
